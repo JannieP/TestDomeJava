@@ -1,0 +1,209 @@
+<div class="gray-box padded margin-bottom testdome-questiondetails" style="overflow:auto" data-questionid="29661"
+     data-questiontype="2">
+    <input type="hidden" name="QuestionPosition" value="1">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="big-text pull-left margin-top-smaller no-margin-bottom"><strong>2. Task Executor</strong></h2>
+            <div class="pull-right">
+
+                <abbr class="questiondifficulty-description tag no-border  " data-filter-name="skillId"
+                      data-filter-value="263" data-original-title="" title="">
+                    <span class="label">Java Spring</span>
+                </abbr>
+                <div class="hidden">
+                    <div class="title">Java Spring</div>
+                    <div class="content">The Spring Framework is an application framework that can be used to build both
+                        java applications and web applications. As one of the most widely used frameworks it's important
+                        for most Java developers to have a working knowledge of.
+                    </div>
+                </div>
+                <abbr class="questiondifficulty-description tag no-border  " data-filter-name="topicId"
+                      data-filter-value="140" data-original-title="" title="">
+                    <span class="label">Configuration</span>
+                </abbr>
+                <div class="hidden">
+                    <div class="title">Configuration</div>
+                    <div class="content">Configuration is a crucial component of most systems and frameworks. It allows
+                        a developer to tune performance and control access to features.
+                    </div>
+                </div>
+                <abbr class="questiondifficulty-description tag no-border  " data-filter-name="visibility"
+                      data-filter-value="1" data-original-title="" title="">
+                    <span class="label">Public</span>
+                </abbr>
+                <div class="hidden">
+                    <div class="title">Public</div>
+                    <div class="content"><em>Public questions</em> (free account) are common interview questions. They
+                        are great for practicing, or if you want to filter candidates using the classic problems.
+                    </div>
+                </div>
+
+            </div>
+            <div class="pull-right">
+                &nbsp;&nbsp;&nbsp;
+            </div>
+            <div class="pull-right margin-top-smallest">
+                <abbr id="ViewScoreDistribution1" class="abbr-primary text-primary inline-text" title="" style=""
+                      data-original-title="">Easy&nbsp;<span class="glyphicon glyphicon-stats"
+                                                             aria-hidden="true"></span></abbr>
+                <div id="ScoresChart1" style="display:none;">
+                    <div class="graph-holder">
+                        <div class="graph-text-left"># of candidates</div>
+                        <table class="graph-chart">
+                            <tbody>
+                            <tr class="qtr graph33">
+                                <th scope="row">0-33%</th>
+                                <td class="bar bar33" style="height: 162px;"></td>
+                            </tr>
+                            <tr class="qtr graph66">
+                                <th scope="row">34-66%</th>
+                                <td class="bar bar66" style="height: 7px;"></td>
+                            </tr>
+                            <tr class="qtr graph100">
+                                <th scope="row">67-100%</th>
+                                <td class="bar bar100" style="height: 187px;"></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="graph-ticks">
+                            <div class="tick" style="height: 25px;"></div>
+                            <div class="ticksmall" style="height: 25px;"></div>
+                            <div class="tick" style="height: 25px;"></div>
+                            <div class="ticksmall" style="height: 25px;"></div>
+                            <div class="tick" style="height: 25px;"></div>
+                            <div class="ticksmall" style="height: 25px;"></div>
+                            <div class="tick" style="height: 25px;"></div>
+                            <div class="ticksmall" style="height: 25px;"></div>
+                            <div class="tick" style="height: 25px;"></div>
+                        </div>
+                        <div class="text-center">Score</div>
+                    </div>
+                </div>
+                <span id="ScoreDistributionText1" style="display: none;">Easy &nbsp;<span
+                        class="glyphicon glyphicon-stats" aria-hidden="true"></span></span>
+                <div id="PerformanceData1" data-performance33="46" data-performance66="2"
+                     data-performance100="53"></div>
+                <div id="StatisticRelevantCandidatesLimitReached1" data-name="true"></div>
+                <div id="Difficulty1" data-name="Easy"></div>
+
+            </div>
+        </div>
+    </div>
+    <hr class="margin-top-small margin-bottom-small">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="form-group question-description no-margin-top">
+                <p>Consider the following Spring bean:</p>
+                <pre><code class="language-java hljs"><span class="hljs-meta">@Component</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span
+                            class="hljs-title">TaskExecutor</span> </span>{
+
+&nbsp; &nbsp; <span class="hljs-meta">@Value</span>(<span class="hljs-string">"${thread.count:10}"</span>)
+&nbsp; &nbsp; <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> threadCount;
+&nbsp; &nbsp; <span class="hljs-meta">@Value</span>(<span class="hljs-string">"worker.thread.name"</span>)
+&nbsp; &nbsp; <span class="hljs-keyword">private</span> String threadNameTemplate;
+&nbsp; &nbsp; <span class="hljs-keyword">private</span> AtomicInteger counter = <span class="hljs-keyword">new</span> AtomicInteger();
+&nbsp; &nbsp; <span class="hljs-keyword">private</span> ExecutorService executorService;
+
+&nbsp; &nbsp; <span class="hljs-meta">@PostConstruct</span>
+&nbsp; &nbsp; <span class="hljs-function"><span class="hljs-keyword">public</span> <span
+                            class="hljs-keyword">void</span> <span class="hljs-title">init</span><span
+                            class="hljs-params">()</span> </span>{
+&nbsp; &nbsp; &nbsp; &nbsp; ThreadFactory threadFactory = (runnable) -&gt; <span class="hljs-keyword">new</span> Thread(threadNameTemplate + counter.incrementAndGet());
+&nbsp; &nbsp; &nbsp; &nbsp; executorService = Executors.newFixedThreadPool(threadCount, threadFactory);
+&nbsp; &nbsp; }
+}</code></pre>
+
+                <p>Select the statements that are correct.</p>
+                <p><i>(Select all acceptable answers.)</i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden-xs hidden-sm">
+
+
+        <div class="form-group mbot20">
+            <div class="margin-top-small">
+
+                <div class=" question-content">
+                    <!--rt_nocontent_start-->
+                    <div class="checkbox"><input id="00b9df4967b848af86b9654efb938920" type="checkbox"
+                                                 name="Answer_Check" value="0" data-group="0" checked>
+                        <div data-for="00b9df4967b848af86b9654efb938920" class="answer-check-label">
+                            <!--rt_nocontent_end-->Properties injected with <em>@Value</em> may, among other sources,
+                            come from system properties and JVM arguments.<!--rt_nocontent_start--></div>
+                    </div><!--rt_nocontent_end--><!--rt_nocontent_start-->
+                    <div class="checkbox"><input id="3692d5be540244a49706ccf17b808395" type="checkbox"
+                                                 name="Answer_Check" value="1" data-group="0">
+                        <div data-for="3692d5be540244a49706ccf17b808395" class="answer-check-label">
+                            <!--rt_nocontent_end-->As the values of <em>threadCount</em> and <em>threadNameTemplate</em>&nbsp;are
+                            private and have no setters, they cannot be set by Spring.<!--rt_nocontent_start--></div>
+                    </div><!--rt_nocontent_end--><!--rt_nocontent_start-->
+                    <div class="checkbox"><input id="050e0f783c5c4a0d9c50c6f26839219e" type="checkbox"
+                                                 name="Answer_Check" value="2" data-group="0">
+                        <div data-for="050e0f783c5c4a0d9c50c6f26839219e" class="answer-check-label">
+                            <!--rt_nocontent_end-->Initialization will fail because the&nbsp;<em>counter</em> and <em>executorService</em>
+                            fields are not managed by Spring.<!--rt_nocontent_start--></div>
+                    </div><!--rt_nocontent_end--><!--rt_nocontent_start-->
+                    <div class="checkbox"><input id="95b915c1ada94697a476841a70771db2" type="checkbox"
+                                                 name="Answer_Check" value="3" data-group="0" checked>
+                        <div data-for="95b915c1ada94697a476841a70771db2" class="answer-check-label">
+                            <!--rt_nocontent_end-->If a property named <em>"thread.count"</em> is not made available to
+                            Spring (i.e. through property files), the value of <em>threadCount</em> field will be 10.
+                            <!--rt_nocontent_start--></div>
+                    </div><!--rt_nocontent_end--><!--rt_nocontent_start-->
+                    <div class="checkbox"><input id="266529eba6c641b5beb8eb5a4bcf1140" type="checkbox"
+                                                 name="Answer_Check" value="4" data-group="0" checked>
+                        <div data-for="266529eba6c641b5beb8eb5a4bcf1140" class="answer-check-label">
+                            <!--rt_nocontent_end-->The value of the field <em>threadNameTemplate</em> will always be set
+                            to the same value regardless of properties provided to Spring.<!--rt_nocontent_start-->
+                        </div>
+                    </div><!--rt_nocontent_end-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden-xs hidden-sm">
+
+
+        <div class="pull-right padding-box margin-top-middle-higher">
+            <a href="mailto:support@testdome.com?subject=Report question: https://www.testdome.com/d/java-spring-interview-questions/263, QuestionId: 29661"
+               class="testdome-reportquestionproblem">Report an issue</a>
+        </div>
+        <input id="ShowHint-29661" type="button"
+               class="testdome-showhint btn btn-primary btn-lg margin-left-small padding-left-15 padding-right-15"
+               value="Show Hint" style="display: none;" disabled="disabled">
+        <div class="testdome-hintmessage submit-info inline-block"></div>
+
+
+        <input id="Submit-29661" name="command" type="button" value="Submit"
+               class="btn btn-primary btn-lg pull-left testdome-finish">
+        <div class="pull-left">&nbsp;&nbsp;&nbsp;</div>
+        <div class="clearfix"></div>
+
+
+        <div class="form-group">
+            <div class="testdome-hintsconsole">
+                <p>Hint 1: @Value properties are interpolated using the ${
+                    <name here="">} syntax.</name>
+                </p>
+            </div>
+            <hr>
+        </div>
+
+
+        <div class="form-group bigger-font">
+            <p class="margin-bottom testdome-scoredescription">Your score is 100%, perfect!</p>
+        </div>
+    </div>
+
+    <a class="hidden-md hidden-lg hidden-xl btn btn-primary" target="_blank" href="/questions/29661">
+        Solve Question
+    </a>
+
+
+    <div class="testdome-hint0" data-name="@Value properties are interpolated using the ${<name here>} syntax."></div>
+</div>

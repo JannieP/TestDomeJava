@@ -1,0 +1,250 @@
+<div class="cbox-left" unselectable="on">
+    <div class="clearfix" unselectable="on"></div>
+    <div class="top-box text-center" unselectable="on">
+        <div class="pull-left" unselectable="on"><b unselectable="on">Question 1 of 3</b></div>
+        <div class="top-box-right testdome-report-issue" unselectable="on">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false" unselectable="on">Report an issue</a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink" id="ReportIssue"
+                unselectable="on">
+                <li class="dropdown-item" unselectable="on">
+                    <a data-target="#reportTechnicalProblemModal" data-toggle="modal" unselectable="on">
+                        Report a technical problem
+                    </a>
+                </li>
+                <li class="dropdown-item" unselectable="on"><a
+                        href="mailto:support@testdome.com?cc=&amp;body=---Instructions---%0A%0APlease explain the problem you are experiencing. Make sure you include the code that triggers the problem.%0A%0A---Your message---%0A%0A%0A&amp;subject=Report a question as incorrect (Folders/35600, ac769789ff754ad3a12504f248426d34,"
+                        id="ReportIncorrectQuestion" target="_blank" unselectable="on">Report a question as
+                    incorrect</a></li>
+                <li role="separator" class="divider" unselectable="on"></li>
+                <li class="dropdown-item" unselectable="on"><a href="https://support.testdome.com/" target="_blank"
+                                                               unselectable="on">Contact support</a></li>
+            </ul>&nbsp;<i class="glyphicon glyphicon-question-sign" id="ReportInfo"
+                          data-title="If you have any issues with either this question or the platform, contact our support team at support@testdome.com."
+                          data-original-title="" title="" unselectable="on"></i>
+            <script>
+                    var postLinkContent = "&nbsp;<i class=\"glyphicon glyphicon-question-sign\" id=\"ReportInfo\" data-title=\"If you have any issues with either this question or the platform, contact our support team at " + testDomeSupportEmail() + ".\" data-original-title=\"\" title=\"\"></i>";
+                    document.getElementById("ReportIssue").insertAdjacentHTML("afterend", postLinkContent);
+                    var queryString = "?cc=&body=---Instructions---%0A%0APlease explain the problem you are experiencing. Make sure you include the code that triggers the problem.%0A%0A---Your message---%0A%0A%0A&subject=Report a question as incorrect (Folders/35600, ac769789ff754ad3a12504f248426d34,";
+                    writeContactLink("ReportIncorrectQuestion", "Report a question as incorrect", queryString);
+
+            </script>
+        </div>
+        <div class="modal fade text-left" tabindex="-1" role="dialog" id="reportTechnicalProblemModal"
+             unselectable="on">
+            <div class="modal-dialog" role="document" unselectable="on">
+                <div class="modal-content" unselectable="on">
+                    <div class="modal-header" unselectable="on">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" unselectable="on">
+                            <span aria-hidden="true" unselectable="on">×</span>
+                        </button>
+                        <h5 class="modal-title" unselectable="on">
+                            Report Technical Problem
+                        </h5>
+                    </div>
+                    <div class="modal-body no-padding-bottom" unselectable="on">
+                        <p class="margin-bottom" unselectable="on">
+                            If you are having issues while using TestDome try these immediate recovery steps:
+                        </p>
+                        <ol unselectable="on">
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Make sure you are connected to the Internet</b>:
+                                <button class="btn" id="verifyConnectionButton" unselectable="on">Verify Connection
+                                </button>
+                            </li>
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Try using private/incognito mode in your browser</b> (or starting
+                                the browser with all extensions and add-ons disabled). To open a new private/incognito
+                                window:
+                                <ul unselectable="on">
+                                    <li unselectable="on">
+                                        In Chrome and Edge: Press <kbd unselectable="on">Ctrl+Shift+N</kbd> on
+                                        Windows/Linux, or <kbd unselectable="on">⌘+Shift+N</kbd> on macOS
+                                    </li>
+                                    <li unselectable="on">
+                                        In Firefox: Press <kbd unselectable="on">Ctrl+Shift+P</kbd> on Windows/Linux, or
+                                        <kbd unselectable="on">⌘+Shift+P</kbd> on macOS
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Update your browser to the latest version</b> and then reopen the
+                                test in private/incognito mode
+                                <ul unselectable="on">
+                                    <li unselectable="on">
+                                        We recommend using
+                                        <a href="https://www.google.com/chrome/" target="_blank" rel="noopener"
+                                           unselectable="on">Chrome</a>,
+                                        <a href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noopener"
+                                           unselectable="on">Edge</a>,
+                                        or
+                                        <a href="https://www.mozilla.org/firefox/new/" target="_blank" rel="noopener"
+                                           unselectable="on">Firefox</a>.
+                                    </li>
+                                    <li unselectable="on">
+                                        Here’s how to update
+                                        <a href="https://support.google.com/chrome/answer/95414?co=GENIE.Platform%3DDesktop&amp;hl=en-GB"
+                                           target="_blank" rel="noopener" unselectable="on">Chrome</a>,
+                                        <a href="https://support.microsoft.com/en-us/office/microsoft-edge-update-settings-af8aaca2-1b69-4870-94fe-18822dbb7ef1"
+                                           target="_blank" rel="noopener" unselectable="on">Edge</a>,
+                                        and
+                                        <a href="https://support.mozilla.org/en-US/kb/update-firefox-latest-release"
+                                           target="_blank" rel="noopener" unselectable="on">Firefox</a>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Ask the test owner that invited you to the test to re-invite you
+                                    using this same email address</b> (at no cost for them) and make sure you try the
+                                sample questions before you start the test to see if everything is working.
+                            </li>
+                        </ol>
+                        <p unselectable="on">
+                            It’s safe to close this tab and log in to the test using the same link you used before to
+                            start it.
+                            <br unselectable="on">
+                            If you were invited via URL without email verification, then the test will start from the
+                            beginning.
+                        </p>
+                        <hr unselectable="on">
+                        <p class="margin-bottom" unselectable="on">
+                            If you are still having issues with your test, please contact us at
+                            <a href="mailto:support@testdome.com?cc=&amp;body=---Instructions---%0A%0APlease explain the problem you are experiencing. Make sure you include the code that triggers the problem.%0A%0A---Your message---%0A%0A%0A&amp;subject=Report a technical problem (Folders/35600, ac769789ff754ad3a12504f248426d34,"
+                               unselectable="on">
+                                support@testdome.com
+                            </a>
+                            and we’ll answer you as soon as possible (usually within 1 business day).
+                        </p>
+                        <p class="margin-top no-margin-bottom" unselectable="on">
+                            We apologize for the inconvenience.<br unselectable="on">
+                            Regards,<br unselectable="on">
+                            TestDome Support Team
+                        </p>
+                    </div>
+                    <div class="modal-footer" unselectable="on">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" unselectable="on">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix" unselectable="on"></div>
+    <hr class="separator no-margin-top no-margin-bottom" unselectable="on">
+    <div class="question-description question-description-fixed form-group" id="QuestionDescription" unselectable="on"
+         style="height: 665px; padding-left: 0px;">
+        <div class="left-to-right" unselectable="on">
+            <div id="QuestionDescriptionText" class="margin-left-small" unselectable="on">
+                <p unselectable="on">Implement<b style="display:none;" unselectable="on"> 5 </b> a<b
+                        style="display:none;" unselectable="on"> y </b> function<b style="display:none;"
+                                                                                   unselectable="on"> m </b> <em
+                        unselectable="on">folderNames</em>,<b style="display:none;" unselectable="on"> q </b> which<b
+                        style="display:none;" unselectable="on"> 6 </b> accepts<b style="display:none;"
+                                                                                  unselectable="on"> 2 </b> a<b
+                        style="display:none;" unselectable="on"> 6 </b> string<b style="display:none;"
+                                                                                 unselectable="on"> f </b> containing<b
+                        style="display:none;" unselectable="on"> n </b> an<b style="display:none;" unselectable="on">
+                    z </b> XML<b style="display:none;" unselectable="on"> 8 </b> file<b style="display:none;"
+                                                                                        unselectable="on"> y </b> that<b
+                        style="display:none;" unselectable="on"> a </b> specifies<b style="display:none;"
+                                                                                    unselectable="on"> k </b> folder<b
+                        style="display:none;" unselectable="on"> s </b> structure<b style="display:none;"
+                                                                                    unselectable="on"> d </b> and<b
+                        style="display:none;" unselectable="on"> z </b> returns<b style="display:none;"
+                                                                                  unselectable="on"> e </b> all<b
+                        style="display:none;" unselectable="on"> u </b> folder<b style="display:none;"
+                                                                                 unselectable="on"> 3 </b> names<b
+                        style="display:none;" unselectable="on"> 4 </b> that<b style="display:none;" unselectable="on">
+                    6 </b> start<b style="display:none;" unselectable="on"> z </b> with<b style="display:none;"
+                                                                                          unselectable="on"> r </b> <em
+                        unselectable="on">startingLetter</em>.<b style="display:none;" unselectable="on"> p </b> The<b
+                        style="display:none;" unselectable="on"> z </b> XML<b style="display:none;" unselectable="on">
+                    8 </b> format<b style="display:none;" unselectable="on"> f </b> is<b style="display:none;"
+                                                                                         unselectable="on"> a </b> given<b
+                        style="display:none;" unselectable="on"> 9 </b> in<b style="display:none;" unselectable="on">
+                    f </b> the<b style="display:none;" unselectable="on"> v </b> example<b style="display:none;"
+                                                                                           unselectable="on"> 4 </b>
+                    below.</p>
+                <p unselectable="on">For<b style="display:none;" unselectable="on"> t </b> example,<b
+                        style="display:none;" unselectable="on"> v </b> for<b style="display:none;" unselectable="on">
+                    3 </b> the<b style="display:none;" unselectable="on"> 9 </b> letter<b style="display:none;"
+                                                                                          unselectable="on"> 6 </b>
+                    'u'<b style="display:none;" unselectable="on"> x </b> and<b style="display:none;" unselectable="on">
+                        2 </b> an<b style="display:none;" unselectable="on"> 8 </b> XML<b style="display:none;"
+                                                                                          unselectable="on"> n </b>
+                    file:</p>
+                <pre unselectable="on"><code class="language-xml hljs" unselectable="on"><span class="php"><span
+                        class="hljs-meta">&lt;?</span>xml</span><b style="display:none;" unselectable="on"><span
+                        class="php"> u </span></b><span class="php"> version=<span
+                        class="hljs-string">"1.0"</span></span><b style="display:none;" unselectable="on"><span
+                        class="php"> a </span></b><span class="php"> encoding=<span
+                        class="hljs-string">"UTF-8"</span><span class="hljs-meta">?&gt;</span></span>
+<span class="hljs-tag">&lt;<span class="hljs-name">folder</span></span><b style="display:none;" unselectable="on"><span
+                            class="hljs-tag"> <span class="hljs-attr">m</span> </span></b><span class="hljs-tag"> <span
+                            class="hljs-attr">name</span>=<span class="hljs-string">"c"</span>&gt;</span>
+<b style="display:none;" unselectable="on"> b </b> <b style="display:none;" unselectable="on"> 2 </b> <b
+                            style="display:none;" unselectable="on"> k </b> <b style="display:none;" unselectable="on"> b </b> <span
+                            class="hljs-tag">&lt;<span class="hljs-name">folder</span></span><b style="display:none;"
+                                                                                                unselectable="on"><span
+                            class="hljs-tag"> <span class="hljs-attr">8</span> </span></b><span class="hljs-tag"> <span
+                            class="hljs-attr">name</span>=<span class="hljs-string">"program</span></span><b
+                            style="display:none;" unselectable="on"><span class="hljs-tag"><span
+                            class="hljs-string"> r </span></span></b><span class="hljs-tag"><span class="hljs-string"> files"</span>&gt;</span>
+<b style="display:none;" unselectable="on"> 5 </b> <b style="display:none;" unselectable="on"> b </b> <b
+                            style="display:none;" unselectable="on"> x </b> <b style="display:none;" unselectable="on"> m </b> <b
+                            style="display:none;" unselectable="on"> y </b> <b style="display:none;" unselectable="on"> y </b> <b
+                            style="display:none;" unselectable="on"> v </b> <b style="display:none;" unselectable="on"> 2 </b> <span
+                            class="hljs-tag">&lt;<span class="hljs-name">folder</span></span><b style="display:none;"
+                                                                                                unselectable="on"><span
+                            class="hljs-tag"> <span class="hljs-attr">6</span> </span></b><span class="hljs-tag"> <span
+                            class="hljs-attr">name</span>=<span class="hljs-string">"uninstall</span></span><b
+                            style="display:none;" unselectable="on"><span class="hljs-tag"><span
+                            class="hljs-string"> t </span></span></b><span class="hljs-tag"><span class="hljs-string"> information"</span></span><b
+                            style="display:none;" unselectable="on"><span class="hljs-tag"> <span
+                            class="hljs-attr">r</span> </span></b><span class="hljs-tag"> /&gt;</span>
+<b style="display:none;" unselectable="on"> 5 </b> <b style="display:none;" unselectable="on"> e </b> <b
+                            style="display:none;" unselectable="on"> j </b> <b style="display:none;" unselectable="on"> c </b> <span
+                            class="hljs-tag">&lt;/<span class="hljs-name">folder</span>&gt;</span>
+<b style="display:none;" unselectable="on"> v </b> <b style="display:none;" unselectable="on"> h </b> <b
+                            style="display:none;" unselectable="on"> r </b> <b style="display:none;" unselectable="on"> q </b> <span
+                            class="hljs-tag">&lt;<span class="hljs-name">folder</span></span><b style="display:none;"
+                                                                                                unselectable="on"><span
+                            class="hljs-tag"> <span class="hljs-attr">4</span> </span></b><span class="hljs-tag"> <span
+                            class="hljs-attr">name</span>=<span class="hljs-string">"users"</span></span><b
+                            style="display:none;" unselectable="on"><span class="hljs-tag"> <span
+                            class="hljs-attr">t</span> </span></b><span class="hljs-tag"> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">folder</span>&gt;</span></code></pre>
+                <p unselectable="on">the<b style="display:none;" unselectable="on"> g </b> function<b
+                        style="display:none;" unselectable="on"> s </b> should<b style="display:none;"
+                                                                                 unselectable="on"> v </b> return<b
+                        style="display:none;" unselectable="on"> g </b> a<b style="display:none;" unselectable="on">
+                    b </b> collection<b style="display:none;" unselectable="on"> p </b> with<b style="display:none;"
+                                                                                               unselectable="on"> 5 </b>
+                    items<b style="display:none;" unselectable="on"> d </b> "uninstall<b style="display:none;"
+                                                                                         unselectable="on"> y </b>
+                    information"<b style="display:none;" unselectable="on"> n </b> and<b style="display:none;"
+                                                                                         unselectable="on"> 4 </b>
+                    "users"<b style="display:none;" unselectable="on"> 3 </b> (in<b style="display:none;"
+                                                                                    unselectable="on"> h </b> any<b
+                            style="display:none;" unselectable="on"> b </b> order).</p>
+            </div>
+        </div>
+    </div>
+    <div id="ScrollForMore" class="questions-tests-scroll" unselectable="on" style="display: none;">
+        <span class="label" unselectable="on">Scroll for more</span>
+    </div>
+    <div class="bottom" unselectable="on">
+        <div class="table-cell" unselectable="on">
+            <input name="command" type="button" id="Submit" value="Submit &amp; next" style=""
+                   class="btn btn-primary btn-lg btn-primary-fixedbg ">
+        </div>
+        <div class="inline-text-larger bottom-box-right table-cell" id="TimeInfoBox" unselectable="on">
+            Question time remaining:
+            <span class="nowrap" unselectable="on">
+                        <b unselectable="on"><abbr id="TimeInfo" unselectable="on" data-original-title="" title=""><span
+                                class="timeLeft" unselectable="on">10h 28min</span></abbr></b><span
+                    class="timeLeftSeconds" style="display:none;" unselectable="on">10h 28min</span>
+                    </span>
+        </div>
+    </div>
+</div>

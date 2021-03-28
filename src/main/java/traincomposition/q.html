@@ -1,0 +1,240 @@
+<div class="cbox-left" unselectable="on">
+    <div class="clearfix" unselectable="on"></div>
+    <div class="top-box text-center" unselectable="on">
+        <div class="pull-left" unselectable="on"><b unselectable="on">Question 1 of 3</b></div>
+        <div class="top-box-right testdome-report-issue" unselectable="on">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false" unselectable="on">Report an issue</a>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink" id="ReportIssue"
+                unselectable="on">
+                <li class="dropdown-item" unselectable="on">
+                    <a data-target="#reportTechnicalProblemModal" data-toggle="modal" unselectable="on">
+                        Report a technical problem
+                    </a>
+                </li>
+                <li class="dropdown-item" unselectable="on"><a
+                        href="mailto:support@testdome.com?cc=&amp;body=---Instructions---%0A%0APlease explain the problem you are experiencing. Make sure you include the code that triggers the problem.%0A%0A---Your message---%0A%0A%0A&amp;subject=Report a question as incorrect (Train Composition/38909, bc8effaece0741718c4003d20cfab51b,"
+                        id="ReportIncorrectQuestion" target="_blank" unselectable="on">Report a question as
+                    incorrect</a></li>
+                <li role="separator" class="divider" unselectable="on"></li>
+                <li class="dropdown-item" unselectable="on"><a href="https://support.testdome.com/" target="_blank"
+                                                               unselectable="on">Contact support</a></li>
+            </ul>&nbsp;<i class="glyphicon glyphicon-question-sign" id="ReportInfo"
+                          data-title="If you have any issues with either this question or the platform, contact our support team at support@testdome.com."
+                          data-original-title="" title="" unselectable="on"></i>
+            <script>
+                    var postLinkContent = "&nbsp;<i class=\"glyphicon glyphicon-question-sign\" id=\"ReportInfo\" data-title=\"If you have any issues with either this question or the platform, contact our support team at " + testDomeSupportEmail() + ".\" data-original-title=\"\" title=\"\"></i>";
+                    document.getElementById("ReportIssue").insertAdjacentHTML("afterend", postLinkContent);
+                    var queryString = "?cc=&body=---Instructions---%0A%0APlease explain the problem you are experiencing. Make sure you include the code that triggers the problem.%0A%0A---Your message---%0A%0A%0A&subject=Report a question as incorrect (Train Composition/38909, bc8effaece0741718c4003d20cfab51b,";
+                    writeContactLink("ReportIncorrectQuestion", "Report a question as incorrect", queryString);
+
+            </script>
+        </div>
+        <div class="modal fade text-left" tabindex="-1" role="dialog" id="reportTechnicalProblemModal"
+             unselectable="on">
+            <div class="modal-dialog" role="document" unselectable="on">
+                <div class="modal-content" unselectable="on">
+                    <div class="modal-header" unselectable="on">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" unselectable="on">
+                            <span aria-hidden="true" unselectable="on">×</span>
+                        </button>
+                        <h5 class="modal-title" unselectable="on">
+                            Report Technical Problem
+                        </h5>
+                    </div>
+                    <div class="modal-body no-padding-bottom" unselectable="on">
+                        <p class="margin-bottom" unselectable="on">
+                            If you are having issues while using TestDome try these immediate recovery steps:
+                        </p>
+                        <ol unselectable="on">
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Make sure you are connected to the Internet</b>:
+                                <button class="btn" id="verifyConnectionButton" unselectable="on">Verify Connection
+                                </button>
+                            </li>
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Try using private/incognito mode in your browser</b> (or starting
+                                the browser with all extensions and add-ons disabled). To open a new private/incognito
+                                window:
+                                <ul unselectable="on">
+                                    <li unselectable="on">
+                                        In Chrome and Edge: Press <kbd unselectable="on">Ctrl+Shift+N</kbd> on
+                                        Windows/Linux, or <kbd unselectable="on">⌘+Shift+N</kbd> on macOS
+                                    </li>
+                                    <li unselectable="on">
+                                        In Firefox: Press <kbd unselectable="on">Ctrl+Shift+P</kbd> on Windows/Linux, or
+                                        <kbd unselectable="on">⌘+Shift+P</kbd> on macOS
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Update your browser to the latest version</b> and then reopen the
+                                test in private/incognito mode
+                                <ul unselectable="on">
+                                    <li unselectable="on">
+                                        We recommend using
+                                        <a href="https://www.google.com/chrome/" target="_blank" rel="noopener"
+                                           unselectable="on">Chrome</a>,
+                                        <a href="https://www.microsoft.com/en-us/edge" target="_blank" rel="noopener"
+                                           unselectable="on">Edge</a>,
+                                        or
+                                        <a href="https://www.mozilla.org/firefox/new/" target="_blank" rel="noopener"
+                                           unselectable="on">Firefox</a>.
+                                    </li>
+                                    <li unselectable="on">
+                                        Here’s how to update
+                                        <a href="https://support.google.com/chrome/answer/95414?co=GENIE.Platform%3DDesktop&amp;hl=en-GB"
+                                           target="_blank" rel="noopener" unselectable="on">Chrome</a>,
+                                        <a href="https://support.microsoft.com/en-us/office/microsoft-edge-update-settings-af8aaca2-1b69-4870-94fe-18822dbb7ef1"
+                                           target="_blank" rel="noopener" unselectable="on">Edge</a>,
+                                        and
+                                        <a href="https://support.mozilla.org/en-US/kb/update-firefox-latest-release"
+                                           target="_blank" rel="noopener" unselectable="on">Firefox</a>.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="margin-bottom" unselectable="on">
+                                <b unselectable="on">Ask the test owner that invited you to the test to re-invite you
+                                    using this same email address</b> (at no cost for them) and make sure you try the
+                                sample questions before you start the test to see if everything is working.
+                            </li>
+                        </ol>
+                        <p unselectable="on">
+                            It’s safe to close this tab and log in to the test using the same link you used before to
+                            start it.
+                            <br unselectable="on">
+                            If you were invited via URL without email verification, then the test will start from the
+                            beginning.
+                        </p>
+                        <hr unselectable="on">
+                        <p class="margin-bottom" unselectable="on">
+                            If you are still having issues with your test, please contact us at
+                            <a href="mailto:support@testdome.com?cc=&amp;body=---Instructions---%0A%0APlease explain the problem you are experiencing. Make sure you include the code that triggers the problem.%0A%0A---Your message---%0A%0A%0A&amp;subject=Report a technical problem (Train Composition/38909, bc8effaece0741718c4003d20cfab51b,"
+                               unselectable="on">
+                                support@testdome.com
+                            </a>
+                            and we’ll answer you as soon as possible (usually within 1 business day).
+                        </p>
+                        <p class="margin-top no-margin-bottom" unselectable="on">
+                            We apologize for the inconvenience.<br unselectable="on">
+                            Regards,<br unselectable="on">
+                            TestDome Support Team
+                        </p>
+                    </div>
+                    <div class="modal-footer" unselectable="on">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" unselectable="on">Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix" unselectable="on"></div>
+    <hr class="separator no-margin-top no-margin-bottom" unselectable="on">
+    <div class="question-description question-description-fixed form-group" id="QuestionDescription" unselectable="on"
+         style="height: 665px; padding-left: 0px;">
+        <div class="left-to-right" unselectable="on">
+            <div id="QuestionDescriptionText" class="margin-left-small" unselectable="on">
+                <p unselectable="on">A<b style="display:none;" unselectable="on"> 8 </b> <em unselectable="on">TrainComposition</em><b
+                        style="display:none;" unselectable="on"> j </b> is<b style="display:none;" unselectable="on">
+                    3 </b> built<b style="display:none;" unselectable="on"> j </b> by<b style="display:none;"
+                                                                                        unselectable="on"> p </b>
+                    attaching<b style="display:none;" unselectable="on"> 8 </b> and<b style="display:none;"
+                                                                                      unselectable="on"> x </b>
+                    detaching<b style="display:none;" unselectable="on"> i </b> wagons<b style="display:none;"
+                                                                                         unselectable="on"> 5 </b>
+                    from<b style="display:none;" unselectable="on"> t </b> the<b style="display:none;"
+                                                                                 unselectable="on"> m </b> left<b
+                            style="display:none;" unselectable="on"> 7 </b> and<b style="display:none;"
+                                                                                  unselectable="on"> 5 </b> the<b
+                            style="display:none;" unselectable="on"> s </b> right<b style="display:none;"
+                                                                                    unselectable="on"> x </b> sides,&nbsp;<strong
+                            unselectable="on">efficiently</strong>&nbsp;with<b style="display:none;" unselectable="on">
+                        9 </b> respect<b style="display:none;" unselectable="on"> z </b> to<b style="display:none;"
+                                                                                              unselectable="on"> v </b>
+                    time<b style="display:none;" unselectable="on"> a </b> used.</p>
+                <p unselectable="on">For<b style="display:none;" unselectable="on"> d </b> example,<b
+                        style="display:none;" unselectable="on"> t </b> if<b style="display:none;" unselectable="on">
+                    d </b> we<b style="display:none;" unselectable="on"> 3 </b> start<b style="display:none;"
+                                                                                        unselectable="on"> c </b> by<b
+                        style="display:none;" unselectable="on"> 7 </b> attaching<b style="display:none;"
+                                                                                    unselectable="on"> 5 </b> wagon<b
+                        style="display:none;" unselectable="on"> w </b> 7<b style="display:none;" unselectable="on">
+                    i </b> from<b style="display:none;" unselectable="on"> z </b> the<b style="display:none;"
+                                                                                        unselectable="on"> m </b> left<b
+                        style="display:none;" unselectable="on"> 1 </b> followed<b style="display:none;"
+                                                                                   unselectable="on"> 7 </b> by<b
+                        style="display:none;" unselectable="on"> 5 </b> attaching<b style="display:none;"
+                                                                                    unselectable="on"> j </b> wagon<b
+                        style="display:none;" unselectable="on"> g </b> 13,<b style="display:none;" unselectable="on">
+                    2 </b> again<b style="display:none;" unselectable="on"> 2 </b> from<b style="display:none;"
+                                                                                          unselectable="on"> 2 </b>
+                    the<b style="display:none;" unselectable="on"> d </b> left,<b style="display:none;"
+                                                                                  unselectable="on"> h </b> we<b
+                            style="display:none;" unselectable="on"> c </b> get<b style="display:none;"
+                                                                                  unselectable="on"> q </b> a<b
+                            style="display:none;" unselectable="on"> p </b> composition<b style="display:none;"
+                                                                                          unselectable="on"> 2 </b> of<b
+                            style="display:none;" unselectable="on"> b </b> two<b style="display:none;"
+                                                                                  unselectable="on"> e </b> wagons<b
+                            style="display:none;" unselectable="on"> 8 </b> (13<b style="display:none;"
+                                                                                  unselectable="on"> r </b> and<b
+                            style="display:none;" unselectable="on"> 7 </b> 7<b style="display:none;" unselectable="on">
+                        m </b> from<b style="display:none;" unselectable="on"> b </b> left<b style="display:none;"
+                                                                                             unselectable="on"> a </b>
+                    to<b style="display:none;" unselectable="on"> b </b> right).<b style="display:none;"
+                                                                                   unselectable="on"> 3 </b> Now<b
+                            style="display:none;" unselectable="on"> c </b> the<b style="display:none;"
+                                                                                  unselectable="on"> v </b> first<b
+                            style="display:none;" unselectable="on"> h </b> wagon<b style="display:none;"
+                                                                                    unselectable="on"> r </b> that<b
+                            style="display:none;" unselectable="on"> c </b> can<b style="display:none;"
+                                                                                  unselectable="on"> j </b> be<b
+                            style="display:none;" unselectable="on"> c </b> detached<b style="display:none;"
+                                                                                       unselectable="on"> e </b> from<b
+                            style="display:none;" unselectable="on"> i </b> the<b style="display:none;"
+                                                                                  unselectable="on"> h </b> right<b
+                            style="display:none;" unselectable="on"> s </b> is<b style="display:none;"
+                                                                                 unselectable="on"> f </b> 7<b
+                            style="display:none;" unselectable="on"> 3 </b> and<b style="display:none;"
+                                                                                  unselectable="on"> j </b> the<b
+                            style="display:none;" unselectable="on"> b </b> first<b style="display:none;"
+                                                                                    unselectable="on"> w </b> that<b
+                            style="display:none;" unselectable="on"> 8 </b> can<b style="display:none;"
+                                                                                  unselectable="on"> y </b> be<b
+                            style="display:none;" unselectable="on"> h </b> detached<b style="display:none;"
+                                                                                       unselectable="on"> s </b> from<b
+                            style="display:none;" unselectable="on"> 1 </b> the<b style="display:none;"
+                                                                                  unselectable="on"> 3 </b> left<b
+                            style="display:none;" unselectable="on"> p </b> is<b style="display:none;"
+                                                                                 unselectable="on"> 1 </b> 13.</p>
+                <p unselectable="on">Implement<b style="display:none;" unselectable="on"> 1 </b> a<b
+                        style="display:none;" unselectable="on"> s </b> <em unselectable="on">TrainComposition</em><b
+                        style="display:none;" unselectable="on"> w </b> that<b style="display:none;" unselectable="on">
+                    6 </b> models<b style="display:none;" unselectable="on"> c </b> this<b style="display:none;"
+                                                                                           unselectable="on"> d </b>
+                    problem.</p>
+                <p unselectable="on"><img alt="train" height="75"
+                                          src="/files/resources/12362/0836c9ed-ed30-4f11-8a8f-9ac1b5296b02.png"
+                                          width="230" class="img-responsive" unselectable="on"></p>
+            </div>
+        </div>
+    </div>
+    <div id="ScrollForMore" class="questions-tests-scroll" unselectable="on" style="display: none;">
+        <span class="label" unselectable="on">Scroll for more</span>
+    </div>
+    <div class="bottom" unselectable="on">
+        <div class="table-cell" unselectable="on">
+            <input name="command" type="button" id="Submit" value="Submit &amp; next" style=""
+                   class="btn btn-primary btn-lg btn-primary-fixedbg ">
+        </div>
+        <div class="inline-text-larger bottom-box-right table-cell" id="TimeInfoBox" unselectable="on">
+            Question time remaining:
+            <span class="nowrap" unselectable="on">
+                        <b unselectable="on"><abbr id="TimeInfo" unselectable="on" data-original-title="" title=""><span
+                                class="timeLeft" unselectable="on">10h 28min</span></abbr></b><span
+                    class="timeLeftSeconds" style="display:none;" unselectable="on">10h 28min</span>
+                    </span>
+        </div>
+    </div>
+</div>
